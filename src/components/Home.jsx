@@ -80,7 +80,7 @@ const Home = () => {
               <div className="lg:p-4 sm:w-56 w-1/3">
                 <img src={Pfizer} className="lg:w-32 lg:h-24 w-16 h-16" alt="Pfizer" />
               </div>
-              <div className="lg:p-4 sm:w-56 w-1/3 -ml-12 md:-ml-28 lg:ml-0">
+              <div className="lg:p-4 sm:w-56 w-1/3 -ml-12 md:-ml-24  lg:ml-0">
                 <img src={Solo} className="w-42 h-24 " alt="Solo" />
               </div>
             </div>
@@ -164,7 +164,7 @@ const Home = () => {
         </section>
         <section className="z-10 ">
           <div className="container   py-16 ">
-            <div className="p-4 lg:w-full justify-center md:ml-8  lg:-ml-12  flex  flex-wrap">
+            <div className="p-4 lg:w-full justify-center md:ml-8  lg:-ml-12 xl:-ml-12  flex  flex-wrap">
               <div className="lg:w-1/2 w-full text-center lg:text-left lg:pl-10 lg:py-6 mt-6  lg:-ml-12  lg:mt-10 space-y-5 ">
                 <h1 className="text-gray-900 text-4xl title-font lg:mt-7 font-medium mb-1 leading-10">Nothing is more important than your health</h1>
 
