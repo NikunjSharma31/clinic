@@ -58,7 +58,7 @@ const Home = () => {
               <img className="object-cover object-center rounded" alt="hero" src={Doctor} />
             </div>
           </div>
-          <div className="absolute  lg:top-3/4 lg:left-80 left-60 hidden lg:flex">
+          <div className="absolute  lg:top-1/2 xl:top-[25rem] lg:left-80 left-60 hidden lg:flex">
             <img src={checkup} className="w-72 h-72" alt="doctor-checkup" />
           </div>
         </section>
@@ -67,9 +67,9 @@ const Home = () => {
         <h1 className="text-center  font-bold text-3xl lg:text-4xl pt-10">Partners & Friends</h1>
         <section className="">
           <div className="container px-5 py-1  mx-auto">
-            <div className="flex lg:flex-wrap lg:px-12 gap-8 lg:gap-0  justify-center text-center items-center">
+            <div className="flex flex-wrap lg:px-12 gap-8 lg:gap-0 ml-20 md:ml-44 lg:ml-0 justify-center  items-center">
               <div className="lg:p-4 sm:w-56 w-1/3">
-                <img src={Sanofi} className="lg:w-24 lg:h-24 w-16 h-16" alt="Sanofi" />
+                <img src={Sanofi} className="lg:w-24 lg:h-24 w-16 h-16 md:h-20 md:w-20" alt="Sanofi" />
               </div>
               <div className="lg:p-4 sm:w-56 w-1/3">
                 <img src={Merck} className="lg:w-24 lg:h-24 w-16 h-16" alt="Merck" />
@@ -80,7 +80,7 @@ const Home = () => {
               <div className="lg:p-4 sm:w-56 w-1/3">
                 <img src={Pfizer} className="lg:w-32 lg:h-24 w-16 h-16" alt="Pfizer" />
               </div>
-              <div className="lg:p-4 sm:w-56 w-1/3">
+              <div className="lg:p-4 sm:w-56 w-1/3 -ml-12 md:-ml-28 lg:ml-0">
                 <img src={Solo} className="w-42 h-24 " alt="Solo" />
               </div>
             </div>
@@ -139,52 +139,58 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-             
+
             </div>
           </div>
         </section>
 
         <section className=" ">
-          <div className="container  py-10 ">
-            <div className="lg:w-full flex justify-center flex-wrap">
-              <img alt="ecommerce" className="lg:w-1/2 sm:w-1/2 w-full  lg:h-auto lg:-ml-14 sm:h-1/3 object-cover object-center rounded" src={google} />
-              <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6  lg:ml-0  lg:mt-0 space-y-5 ">
+          <div className="container  py-16 ">
+            <div className="p-4 lg:w-full flex sm:ml-0 md:ml-8  lg:ml-2 justify-center flex-wrap">
+              <img alt="ecommerce" className="lg:w-1/2 sm:w-3/4 w-full  lg:h-auto lg:-ml-14 sm:h-1/3  rounded" src={google} />
+              <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6  lg:ml-0 text-center lg:text-left lg:mt-0 space-y-5 ">
                 <h1 className="text-gray-900 text-4xl title-font lg:mt-7  font-medium mb-1 leading-10">We’re just better at making you feel better</h1>
 
                 <p className="leading-relaxed text-blue-500 ">Rumah sakit adalah bagian integral dari suatu organisasi sosial dan kesehatan dengan fungsi menyediakan pelayanan paripurna (komprehensif).</p>
+                <div className="flex justify-center lg:justify-start">
                 <button className="flex gap-5 items-center  rounded-full text-white bg-gradient-to-l from-indigo-500 to-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 ">
                   <img src={split} alt="split" />
                   Find us
                 </button>
+                </div>
               </div>
             </div>
           </div>
         </section>
         <section className="z-10 ">
-          <div className="container   py-10 ">
-            <div className="lg:w-full justify-between  lg:gap-38 lg:-ml-14  flex  flex-wrap">
-              <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6  lg:ml-0  lg:mt-10 space-y-5 ">
-                <h1 className="text-gray-900 text-3xl title-font lg:mt-7 font-medium mb-1 leading-10">Nothing is more important than your health</h1>
+          <div className="container   py-16 ">
+            <div className="p-4 lg:w-full justify-center md:ml-8  lg:-ml-12  flex  flex-wrap">
+              <div className="lg:w-1/2 w-full text-center lg:text-left lg:pl-10 lg:py-6 mt-6  lg:-ml-12  lg:mt-10 space-y-5 ">
+                <h1 className="text-gray-900 text-4xl title-font lg:mt-7 font-medium mb-1 leading-10">Nothing is more important than your health</h1>
 
                 <p className="leading-relaxed text-blue-500">Rumah sakit adalah bagian integral dari suatu organisasi sosial dan kesehatan dengan fungsi menyediakan pelayanan paripurna (komprehensif).</p>
+                <div className="flex justify-center lg:justify-start">
                 <button className="flex gap-5 rounded-full text-white bg-gradient-to-l from-indigo-500 to-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 ">
                   <img className="" src={Info} alt="Info" />
                   Learn more
                 </button>
+                </div>
               </div>
-              <img alt="ecommerce" className="lg:w-96 sm:w-1/2 w-full lg:h-auto h-1/3 mt-12 lg:mt-0 object-cover object-center " src={Homedis} />
+              {/* <div className="lg:w-96 sm:w-1/2 w-full lg:h-auto h-1/3 mt-12 lg:mt-0 flex justify-center  lg:justify-start"> */}
+              <img alt="ecommerce" className="lg:w-96 xl:w-1/3 sm:w-3/4 w-full lg:h-auto h-1/3 mt-12 lg:ml-20  lg:mt-0 object-cover object-center " src={Homedis} />
+              {/* </div> */}
             </div>
           </div>
         </section>
 
         <section className=" ">
-          <div className="container  flex flex-col py-12 justify-center items-center  text-white">
+          <div className="container sm:ml-0 md:ml-14 lg:ml-0  flex flex-col py-12 justify-center items-center  text-white">
             <div className="lg:w-full p-10   flex flex-col mb-16 items-center text-center bg-gradient-to-l from-indigo-500 to-blue-500 px-12 rounded-3xl ">
               <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium ">Schedule a call with us soon.</h1>
               <p className="mb-8 text-sm leading-relaxed text-center lg:w-2/3">Rumah sakit adalah bagian integral dari suatu organisasi sosial dan kesehatan dengan fungsi menyediakan pelayanan paripurna (komprehensif).</p>
 
               <div className="flex flex-col lg:flex-row gap-4 lg:gap-10">
-                <button className="border border-1 w-56 inline-flex py-3 px-5 rounded-full items-center hover:bg-gray-200 focus:outline-none gap-3">
+                <button className="border border-1 w-56 inline-flex py-3 px-5 rounded-full items-center hover:bg-gray-200 hover:text-blue-500 focus:outline-none gap-3">
                   <img src={calendar} alt="calendar" />
                   Schedule a date
                 </button>
@@ -292,7 +298,7 @@ const Home = () => {
             </div>
           </div>
           <div>
-          <div className="lg:w-2/3 w-2/3 md:w-2/3 sm:w-2/3 items-center md:text-left text-center ml-16 sm:ml-24 md:ml-40  sm:40 lg:ml-56 h-[0.1rem] text-white bg-white"></div>
+            <div className="lg:w-2/3 w-2/3 md:w-2/3 sm:w-2/3 items-center md:text-left text-center ml-16 sm:ml-24 md:ml-40  sm:40 lg:ml-56 h-[0.1rem] text-white bg-white"></div>
             <p className="text-center mt-10 pb-10">Copyright © Expertsolutions 2023</p>
           </div>
         </div>
